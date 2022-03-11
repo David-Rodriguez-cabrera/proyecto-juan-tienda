@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-title class="subtitulo ion-text-wrap">
+    Carrito
+  </ion-title>
+  <ion-buttons slot="start">
+    <ion-button (click)="openMenu()">
+      <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+<br>
+<ion-content>
+  <div *ngFor="let producto of productos">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
